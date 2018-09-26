@@ -1,9 +1,7 @@
 import math
-from io import BytesIO
-
-from PIL import Image
-
 import tkinter
+from io import BytesIO
+from PIL import Image
 from tkinter import filedialog
 
 root = tkinter.Tk()
@@ -12,9 +10,9 @@ root.withdraw()
 path = filedialog.askopenfilename()
 
 im = Image.open(path)
+
 macroPixelHeight = int(input("Number of vertical boxes: "))
 macroPixelSize = math.floor(im.size[1] / (macroPixelHeight * 2))
-
 macroPixelWidth = math.floor(macroPixelHeight * im.size[0] / im.size[1])
 
 newIm = Image.new('RGB', (macroPixelWidth * macroPixelSize,
