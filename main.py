@@ -12,7 +12,7 @@ root.withdraw()
 path = filedialog.askopenfilename()
 
 im = Image.open(path)
-macroPixelHeight = int(input("Numero di tasselli verticali: "))
+macroPixelHeight = int(input("Number of vertical boxes: "))
 macroPixelSize = math.floor(im.size[1] / (macroPixelHeight * 2))
 
 macroPixelWidth = math.floor(macroPixelHeight * im.size[0] / im.size[1])
