@@ -1,2 +1,5 @@
 # PyTesselate
-A simple Python script to create a rough downsampled image from an original
+A simple Python script to create a rough downsampled image from an original.
+
+Works best with portraits! 
+
